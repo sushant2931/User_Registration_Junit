@@ -8,7 +8,7 @@ public class UserValidationTest {
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validateName("Sushant");
+        boolean isValid = userValidator.validateName(" Sushant ");
         Assert.assertTrue(isValid);
 
     }
@@ -17,7 +17,7 @@ public class UserValidationTest {
     public void givenFirstName_WhenFirstLetterIsSmall_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("sushant");
+        boolean isNotValid = userValidator.validateName(" sushant ");
         Assert.assertFalse(isNotValid);
 
     }
