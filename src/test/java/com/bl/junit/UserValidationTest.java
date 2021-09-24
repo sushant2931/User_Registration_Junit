@@ -8,7 +8,7 @@ public class UserValidationTest {
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validateName("Ashika");
+        boolean isValid = userValidator.validateName("Sushant");
         Assert.assertTrue(isValid);
 
     }
@@ -17,7 +17,7 @@ public class UserValidationTest {
     public void givenFirstName_WhenFirstLetterIsSmall_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("ashika");
+        boolean isNotValid = userValidator.validateName("sushant");
         Assert.assertFalse(isNotValid);
 
     }
@@ -26,7 +26,7 @@ public class UserValidationTest {
     public void givenFirstName_WhenLesserThanThreeCharacters_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("As");
+        boolean isNotValid = userValidator.validateName("Su");
         Assert.assertFalse(isNotValid);
 
     }
@@ -71,7 +71,7 @@ public class UserValidationTest {
     public void givenLastName_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validateName("Chadaga");
+        boolean isValid = userValidator.validateName("Lad");
         Assert.assertTrue(isValid);
 
     }
@@ -80,7 +80,7 @@ public class UserValidationTest {
     public void givenLastName_WhenFirstLetterIsSmall_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("chadaga");
+        boolean isNotValid = userValidator.validateName("lad");
         Assert.assertFalse(isNotValid);
 
     }
@@ -89,7 +89,7 @@ public class UserValidationTest {
     public void givenLastName_WhenLesserThanThreeCharacters_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("Ch");
+        boolean isNotValid = userValidator.validateName("La");
         Assert.assertFalse(isNotValid);
 
     }
@@ -116,7 +116,7 @@ public class UserValidationTest {
     public void givenLastName_WhenNumericCharatersArePresent_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateName("Chadag19");
+        boolean isNotValid = userValidator.validateName("lad29");
         Assert.assertFalse(isNotValid);
 
     }
@@ -134,7 +134,7 @@ public class UserValidationTest {
     public void givenEmailAddress_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validateEmail("ashikachadaga@gmail.com");
+        boolean isValid = userValidator.validateEmail("sushantlad8888@gmail.com");
         Assert.assertTrue(isValid);
 
     }
@@ -170,7 +170,7 @@ public class UserValidationTest {
     public void givenMobileNumber_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validateMobileNumber("91 9485736453");
+        boolean isValid = userValidator.validateMobileNumber("91 8830602356");
         Assert.assertTrue(isValid);
     }
 
@@ -178,7 +178,7 @@ public class UserValidationTest {
     public void givenMobileNumber_WhenNoSpace_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateMobileNumber("919485736453");
+        boolean isNotValid = userValidator.validateMobileNumber("918830602356");
         Assert.assertFalse(isNotValid);
     }
 
@@ -186,7 +186,7 @@ public class UserValidationTest {
     public void givenMobileNumber_WhenNumberLessThanTenDigits_ShouldReturnFalse() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isNotValid = userValidator.validateMobileNumber("91 5736453");
+        boolean isNotValid = userValidator.validateMobileNumber("91 602356");
         Assert.assertFalse(isNotValid);
     }
 
@@ -230,7 +230,7 @@ public class UserValidationTest {
     public void givenPassword_WhenProper_ShouldReturnTrue() {
 
         UserValidation userValidator = new UserValidation();
-        boolean isValid = userValidator.validatePassword("AshikaCh@dag11");
+        boolean isValid = userValidator.validatePassword("Sushant@dag11");
         Assert.assertTrue(isValid);
     }
 
